@@ -1,19 +1,23 @@
 <section class="modal-overlay" id="overlay">
   <div class="modal" id="modal">
-    <div class="modal-header">
+    <div class="modal-header" id="clase-modal-put">
       <h3>Atualizar pokemon</h3>
       <a href="/">X</a>
     </div>
 
     <div class="modal-body">
-      <form action="/update/<% pokemonUp.id %> " method="post">
+      <form
+        action="/update/<%= pokemonPut.id %> "
+        method="post"
+        class="form-modal"
+      >
         <div class="input-data">
           <label for="nome">Nome: </label>
           <input
             type="text"
             id="name"
             name="nome"
-            value="<% pokemonUp.nome %>"
+            value="<%= pokemonPut.nome %>"
           />
         </div>
 
@@ -23,7 +27,7 @@
             type="text"
             id="descricao"
             name="descricao"
-            value="<% pokemonUp.descricao %>"
+            value="<%= pokemonPut.descricao %>"
           />
         </div>
 
@@ -33,7 +37,7 @@
             type="text"
             id="tipo"
             name="tipo"
-            value="<% pokemonUp.tipo %>"
+            value="<%= pokemonPut.tipo %>"
           />
         </div>
 
@@ -43,7 +47,7 @@
             type="text"
             id="imagem"
             name="imagem"
-            value="<% pokemonUp.imagem %>"
+            value="<%= pokemonPut.imagem %>"
           />
         </div>
 

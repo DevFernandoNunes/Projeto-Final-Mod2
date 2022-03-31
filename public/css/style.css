@@ -300,3 +300,146 @@ form .btn {
   color: #ff0000;
   transition: all 0.7s;
 }
+
+/**********************************/
+/* 4. Modal
+/**********************************/
+
+.modal-overlay {
+  background-color: #00000050;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+.modal {
+  margin: 1rem;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  min-height: 300px;
+  background-color: #fff;
+  border-radius: 11px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ff0000;
+  padding: 1rem;
+  color: #fff;
+}
+
+.modal-header a#close-modal-put {
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-body {
+  padding: 0.5rem 1rem;
+  flex: 1;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.form-modal .input-data input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  outline: none;
+  border: solid 2px #ccc;
+}
+
+.form-modal .input-data label {
+  color: #555;
+}
+.form-modal button {
+  padding: 0.7rem;
+  width: 20%;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #16be10;
+  border-radius: 15px;
+  text-decoration: none;
+  border: solid 1px #16be10;
+  cursor: pointer;
+}
+
+.form-modal button:hover {
+  padding: 0.7rem;
+  width: 20%;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: #16be10;
+  color: #fff;
+  border-radius: 15px;
+  transition: 0.9s;
+}
+
+.modal-body p {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#btns-del {
+  display: flex;
+  margin: 0 auto;
+}
+
+#btns-del a {
+  padding: 0.7rem;
+  text-decoration: none;
+  width: 100%;
+  margin: 2rem 1rem 1rem;
+  color: #555;
+}
+
+#btns-del a#yes {
+  padding: 0.7rem;
+  text-decoration: none;
+  width: 100%;
+  margin: 2rem 1rem 1rem;
+  color: #16be10;
+  border: solid 1px #16be10;
+  border-radius: 5px;
+}
+
+#btns-del a#yes:hover {
+  color: #fff;
+  background-color: #16be10;
+  transition: all 0.7s ease-in-out;
+}
+
+#btns-del a#no {
+  padding: 0.7rem;
+  text-decoration: none;
+  width: 100%;
+  margin: 2rem 1rem 1rem;
+  color: #ff0000;
+  border: solid 1px #ff0000;
+  border-radius: 5px;
+}
+
+#btns-del a#no:hover {
+  color: #fff;
+  background-color: #ff0000;
+  transition: all 0.7s ease-in-out;
+}

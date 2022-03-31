@@ -14,17 +14,18 @@
           <h4><%= pokemon.nome %></h4>
           <p><%= pokemon.descricao %></p>
           <p>Tipo: <%= pokemon.tipo %></p>
-          <a href="/detalhes/<%= pokemon.id %> ">Editar</a>
-          <a class="card--delete" href="/delete/<%= pokemon.id %> ">Apagar</a>
+          <a href="/getById/<%= pokemon.id %>/put">Editar</a>
+          <a class="card--delete" href="/getById/<%= pokemon.id %>/delete"
+            >Apagar</a
+          >
         </div>
         <% }) %>
       </section>
       <!-- card -->
     </main>
-    <section>
-      <% if(pokemonPut == null) { %> <%- include('./components/modalPut') %> <%
-      } %>
-    </section>
-    <%- include('./components/footer') %>
+
+    <% if(pokemonPut != null) { %> <%- include('./components/modalPut') %> <% }
+    %> <% if(pokemonDel != null) { %> <%- include('./components/modalDel')%> <%
+    } %> <%- include('./components/footer') %>
   </body>
 </html>
