@@ -10,27 +10,31 @@
       <section id="cadastro">
         <img src="/img/togedemaru.png" alt="togedemaru" />
         <div>
+          <% if(message!=""){ %>
+            <%- include('./components/alerts') %>
+          <% } %> 
+
           <h2>Cadastre um novo Pokemon!</h2>
 
           <form action="/create" method="post">
             <div class="input-data">
               <label for="nome">Nome: </label>
-              <input type="text" id="name" name="nome" />
+              <input type="text" id="name" name="nome" required />
             </div>
 
             <div class="input-data">
               <label for="descricao">Descrição: </label>
-              <input type="text" id="descricao" name="descricao" />
+              <input type="text" id="descricao" name="descricao" required />
             </div>
 
             <div class="input-data">
               <label for="tipo">Tipo: </label>
-              <input type="text" id="tipo" name="tipo" />
+              <input type="text" id="tipo" name="tipo" required />
             </div>
 
             <div class="input-data">
               <label for="imagem">Link da imagem: </label>
-              <input type="text" id="imagem" name="imagem" />
+              <input type="text" id="imagem" name="imagem" required />
             </div>
 
             <div class="btn">
@@ -41,7 +45,6 @@
       </section>
       <!-- formulario -->
     </main>
-
     <%- include('./components/footer') %>
   </body>
 </html>

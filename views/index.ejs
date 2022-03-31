@@ -6,6 +6,12 @@
   <body>
     <%- include('./components/nav') %>
 
+    <header>
+      <% if(message!=""){ %>
+        <%- include('./components/alerts') %>
+      <% } %> 
+    </header>
+
     <main>
       <section id="cards">
         <% pokedex.forEach(pokemon => { %>
