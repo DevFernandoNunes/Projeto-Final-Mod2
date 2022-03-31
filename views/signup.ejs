@@ -10,9 +10,7 @@
       <section id="cadastro">
         <img src="/img/togedemaru.png" alt="togedemaru" />
         <div>
-          <% if(message!=""){ %>
-            <%- include('./components/alerts') %>
-          <% } %> 
+          <% if(message!=""){ %> <%- include('./components/alerts') %> <% } %>
 
           <h2>Cadastre um novo Pokemon!</h2>
 
@@ -46,5 +44,6 @@
       <!-- formulario -->
     </main>
     <%- include('./components/footer') %>
+    <script src="/script/script.js"></script>
   </body>
 </html>

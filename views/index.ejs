@@ -4,13 +4,8 @@
     <%- include('./components/head') %>
   </head>
   <body>
-    <%- include('./components/nav') %>
-
-    <header>
-      <% if(message!=""){ %>
-        <%- include('./components/alerts') %>
-      <% } %> 
-    </header>
+    <%- include('./components/nav') %> <% if(message!=""){ %> <%-
+    include('./components/alerts') %> <% } %>
 
     <main>
       <section id="cards">
@@ -33,5 +28,7 @@
     <% if(pokemonPut != null) { %> <%- include('./components/modalPut') %> <% }
     %> <% if(pokemonDel != null) { %> <%- include('./components/modalDel')%> <%
     } %> <%- include('./components/footer') %>
+
+    <script src="/script/script.js"></script>
   </body>
 </html>

@@ -6,6 +6,11 @@ let type = "";
 
 const getAll = async (req, res) => {
   try {
+    setTimeout(() => {
+      message = "";
+      type = "";
+    }, 1000);
+
     const pokedex = await Pokemon.findAll(orderById);
     res.render("index", {
       pokedex,
