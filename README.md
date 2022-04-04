@@ -85,14 +85,14 @@ Antes de começar você vai precisar ter instalado em sua máquina as seguintes 
 Além disto é bom ter um editor para trabalhar com o código como [VScode](https://code.visualstudio.com/).
 E para estar rodando o código em um servidor local e o código rodar normalmente basta instalar a dependência do nodemon veja mais em https://www.npmjs.com/package/nodemon.
 
-Está tudo pronto agora... é só baixar o arquivo e executar. Você pode [acessar o código fonte do projeto](https://github.com/DevFernandoNunes/Projeto2-Mod2)
+Está tudo pronto agora... é só baixar o arquivo e executar. Você pode [acessar o código fonte do projeto](https://github.com/DevFernandoNunes/Projeto-Final-Mod2)
 
 ## Abrir e rodar o projeto
 
 ```bash
  
 #Clone este repositório
-$ git clone <https://github.com/DevFernandoNunes/Projeto2-Mod2.git>
+$ git clone <https://github.com/DevFernandoNunes/Projeto-Final-Mod2.git>
 
 #Abra o arquivo index.html que está na raiz da pasta principal após clonar o repositório.
  
