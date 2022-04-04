@@ -93,8 +93,6 @@ Está tudo pronto agora... é só baixar o arquivo e executar. Você pode [acess
  
 #Clone este repositório
 $ git clone <https://github.com/DevFernandoNunes/Projeto-Final-Mod2.git>
-
-#Abra o arquivo index.html que está na raiz da pasta principal após clonar o repositório.
  
 ``` 
  
